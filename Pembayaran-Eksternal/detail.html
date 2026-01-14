@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Pembayaran Eksternal</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-badge">PE</div>
+          <div>
+            <h1>Pembayaran Eksternal</h1>
+            <div class="chip">Prototype UI</div>
+          </div>
+        </div>
+        <div class="nav-section">Modul</div>
+        <nav class="nav">
+          <a href="index.html">List Pembayaran</a>
+          <a href="form.html">Form Pembayaran</a>
+          <a class="active" href="detail.html">Detail Pembayaran</a>
+          <a href="documents.html">Dokumen</a>
+          <a href="verify-list.html">Verifikasi List</a>
+          <a href="verify-form.html">Verifikasi Form</a>
+          <a href="approval.html">Approval Flow</a>
+          <a href="monitoring.html">Monitoring</a>
+          <a href="print-preview.html">Print Preview</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="header">
+          <div>
+            <h2>Detail Pembayaran Eksternal</h2>
+            <p>Item pembayaran yang membentuk total tagihan.</p>
+          </div>
+          <div class="toolbar">
+            <button class="btn accent">Tambah Item</button>
+            <button class="btn ghost">Impor Dari Kontrak</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Uraian</th>
+                <th>Qty</th>
+                <th>Satuan</th>
+                <th>Harga</th>
+                <th>Subtotal</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Termin 2 Maintenance</td>
+                <td>1</td>
+                <td>Lot</td>
+                <td>125.000.000</td>
+                <td>125.000.000</td>
+                <td><button class="btn ghost">Edit</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pengiriman dan instalasi</td>
+                <td>1</td>
+                <td>Paket</td>
+                <td>12.500.000</td>
+                <td>12.500.000</td>
+                <td><button class="btn ghost">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <div class="grid two">
+            <div class="field">
+              <label>Catatan Detail</label>
+              <textarea placeholder="Catatan khusus untuk detail pembayaran"></textarea>
+            </div>
+            <div class="field">
+              <label>Total Detail</label>
+              <input type="text" value="137.500.000" readonly />
+              <div class="callout" style="margin-top: 10px;">Total detail digunakan sebagai dasar jumlah pembayaran.</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

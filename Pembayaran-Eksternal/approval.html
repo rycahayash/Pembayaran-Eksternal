@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Approval Flow Pembayaran Eksternal</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-badge">PE</div>
+          <div>
+            <h1>Pembayaran Eksternal</h1>
+            <div class="chip">Prototype UI</div>
+          </div>
+        </div>
+        <div class="nav-section">Modul</div>
+        <nav class="nav">
+          <a href="index.html">List Pembayaran</a>
+          <a href="form.html">Form Pembayaran</a>
+          <a href="detail.html">Detail Pembayaran</a>
+          <a href="documents.html">Dokumen</a>
+          <a href="verify-list.html">Verifikasi List</a>
+          <a href="verify-form.html">Verifikasi Form</a>
+          <a class="active" href="approval.html">Approval Flow</a>
+          <a href="monitoring.html">Monitoring</a>
+          <a href="print-preview.html">Print Preview</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="header">
+          <div>
+            <h2>Approval Flow</h2>
+            <p>Alur persetujuan pembayaran eksternal.</p>
+          </div>
+          <div class="toolbar">
+            <button class="btn accent">Mulai Approval</button>
+            <button class="btn ghost">Lihat Histori</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="chips">
+            <span class="chip">Kode: EXT-2026-001</span>
+            <span class="chip">Nilai: 125.000.000</span>
+            <span class="chip">Jenis: Pihak Ketiga</span>
+          </div>
+          <div class="divider"></div>
+          <div class="grid three">
+            <div class="panel" style="padding: 16px">
+              <h3>Manajer Keuangan</h3>
+              <p class="callout">Status: Approved</p>
+            </div>
+            <div class="panel" style="padding: 16px">
+              <h3>Direktur Keuangan</h3>
+              <p class="callout">Status: In Progress</p>
+            </div>
+            <div class="panel" style="padding: 16px">
+              <h3>Direktur Utama</h3>
+              <p class="callout">Status: Pending</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
